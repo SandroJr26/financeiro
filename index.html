@@ -14,17 +14,21 @@
     <h1 class="page-title">Controle <span class="red">Financeiro</span></h1>
     <h2 class="page-subtitle">Mês 1</h2>
     <div class="entradaSaida">
-      <div class="div-entradaSaida">
+      <div class="div-entradaSaida js-entrada">
         <h3 class="control-title">Entrada</h3>
-        <input type="number" id="entrada" name="entrada" placeholder="Insira o valor de entrada.">
-        <button onclick="adicionarEntrada">Adicionar Entrada</button>
+        <input type="number" id="entrada" name="entrada" placeholder="A receber.">
+        <button onclick="adicionarEntrada()">Adicionar Entrada</button>
         <div class="total">R$ <span class="entrada">0</span></div>
       </div>
-      <div class="div-entradaSaida">
+      <div class=" div-entradaSaida js-saida">
         <h3 class="control-title">Saída</h3>
-        <input type="number" id="saida" name="saida" placeholder="Insira o valor de saída.">
-        <button onclick="adicionarSaida">Adicionar Saída</button>
+        <input type="number" id="saida" name="saida" placeholder="A pagar.">
+        <button onclick="adicionarSaida()">Adicionar Saída</button>
         <div class="total">R$ <span class="saida">0</span></div>
+      </div>
+      <div class="saldoAtual">
+        <h3>Saldo atual</h3>
+        <p class="valorAtual">R$ <span>0</span></p>
       </div>
     </div>
   </div>
