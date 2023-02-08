@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle Financeiro</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">Controle <span class="red">Financeiro</span></h1>
+    <h2 class="page-subtitle">Mês 1</h2>
+    <div class="entradaSaida">
+      <div class="div-entradaSaida">
+        <h3 class="control-title">Entrada</h3>
+        <input type="number" id="entrada" name="entrada" placeholder="Insira o valor de entrada.">
+        <button onclick="adicionarEntrada">Adicionar Entrada</button>
+        <div class="total">R$ <span class="entrada">0</span></div>
+      </div>
+      <div class="div-entradaSaida">
+        <h3 class="control-title">Saída</h3>
+        <input type="number" id="saida" name="saida" placeholder="Insira o valor de saída.">
+        <button onclick="adicionarSaida">Adicionar Saída</button>
+        <div class="total">R$ <span class="saida">0</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
