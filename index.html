@@ -16,19 +16,19 @@
     <div class="entradaSaida">
       <div class="div-entradaSaida js-entrada">
         <h3 class="control-title">Entrada</h3>
-        <input type="number" id="entrada" name="entrada" placeholder="A receber.">
+        <input onclick="this.select();" type="number" id="entrada" name="entrada" placeholder="A receber.">
         <button onclick="adicionarEntrada()">Adicionar Entrada</button>
-        <div class="total"><span class="entrada">0</span></div>
+        <div class="total"><span class="entrada">R$ 0</span></div>
       </div>
       <div class=" div-entradaSaida js-saida">
         <h3 class="control-title">Saída</h3>
-        <input type="number" id="saida" name="saida" placeholder="A pagar.">
+        <input onclick="this.select();" type="number" id="saida" name="saida" placeholder="A pagar.">
         <button onclick="adicionarSaida()">Adicionar Saída</button>
-        <div class="total"><span class="saida">0</span></div>
+        <div class="total"><span class="saida">R$ 0</span></div>
       </div>
       <div class="saldoAtual">
         <h3>Saldo atual</h3>
-        <p class="valorAtual"><span>0</span></p>
+        <p class="valorAtual">R$ 0</p>
       </div>
     </div>
   </div>
