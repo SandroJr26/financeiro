@@ -30,19 +30,25 @@ function adicionarEntrada() {
   });
   document.querySelector(".js-entrada .entrada").innerHTML =
     valorEntradaFormatado;
-  return valorEntradaFormatado;
+  atualizaSaldo();
 }
 
 function adicionarSaida() {
   const valorSaida = document.getElementById("saida").value;
-  totalSaida -= Number(valorSaida);
+  totalSaida += Number(valorSaida);
   valorSaidaFormatado = totalSaida.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
   document.querySelector(".js-saida .saida").innerHTML = valorSaidaFormatado;
-  return valorSaidaFormatado;
+  atualizaSaldo();
 }
 
-adicionarEntrada();
-adicionarSaida();
+function atualizaSaldo() {
+  totalSaldo = totalEntrada - totalSaida;
+  totalSaldoFormatado = totalSaldo.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+  document.querySelector(".valorAtual").innerHTML = totalSaldoFormatado;
+}
